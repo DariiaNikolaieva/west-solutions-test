@@ -1,7 +1,13 @@
+// bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../node_modules/bootstrap-icons/font/bootstrap-icons.scss';
+
+// fonts
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import url("https://use.typekit.net/ifw0ovt.css");
-@import 'palette';
+
+// styles
 @import 'mixins/typography';
+@import 'palette';
 @import 'custom';
+@import 'layouts/header';
