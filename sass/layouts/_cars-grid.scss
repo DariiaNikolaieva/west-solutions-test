@@ -1,16 +1,49 @@
 .cars-grid {
-    padding-top: 100px;
-    padding-bottom: 120px;
+  padding-top: 100px;
+  padding-bottom: 120px;
 }
 
 .cars-grid-title {
-    @include title-second;
-    text-align: center;
-    margin-bottom: 80px;
-    color: $color-secondary-100;
-    line-height: 1.5;
+  @include title-second;
+  text-align: center;
+  margin-bottom: 74px;
+  color: $color-secondary-100;
+  line-height: 1.5;
 }
 
 .dropdown-container {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+
+.cars-grid .dropdown > .btn.btn-secondary {
+  width: 170px;
+  @include btn-secondary;
+  text-align: left;
+  padding: 13.44px 0 12.48px 16px;
+  color: $color-primary-100;
+  border: 1px solid $color-secondary-300;
+  border-radius: 15px;
+  background-color: transparent;
+}
+
+.dropdown-toggle::after {
+    position: absolute;
+    top: 17.26px;
+    right: 16px;
+    content: '\2304';
+    color: transparent;
+    background-image: url('../assets/images/arrowhead-down.svg');
+    background-repeat: no-repeat;
+}
+
+.cars-grid .btn.btn-primary {
+    @include btn-secondary;
+    padding: 13px 118px;
+    color: $color-primary-200;
+    background-color: $color-primary-300;
+    border-color: $color-primary-300;
+    border-radius: 15px;
+  }
