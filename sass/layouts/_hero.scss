@@ -1,0 +1,39 @@
+.hero {
+  padding-top: 118px;
+  padding-bottom: 148px;
+  color: $color-primary-200;
+}
+
+.hero-title {
+  @include title-first;
+  margin-bottom: 32px;
+  line-height: 1.36;
+}
+
+.hero-text {
+    margin: 0;
+}
+
+.hero .row {
+  @include tabs;
+  margin-bottom: 72px;
+  line-height: 1.33;
+}
+
+.hero .row > .col {
+  flex: inherit;
+  width: 296px;
+
+  &:first-child {
+    margin-right: 20px;
+  }
+}
+
+.btn.btn-outline-primary {
+  @include btn-primary;
+  padding: 13px 86px 14px 91px;
+  color: inherit;
+  line-height: 1.35;
+  border: 2px solid $color-primary-200;
+  border-radius: 15px;
+}
