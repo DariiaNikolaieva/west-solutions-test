@@ -1,0 +1,120 @@
+@mixin title-first {
+    font-family: "noto-sans";
+    font-weight: 700;
+    font-size: 50px;
+    font-style: normal;
+}
+
+@mixin title-second {
+    font-family:"poppins";
+    font-weight: 700;
+    font-size: 50px;
+    font-style: normal;
+}
+
+@mixin title-third {
+    font-family: "noto-sans";
+    font-weight: 600;
+    font-size: 30px;
+    font-style: normal;
+}
+
+@mixin title-fourth {
+    font-family: "noto-sans";
+    font-weight: 600;
+    font-size: 25px;
+    font-style: normal;
+}
+
+@mixin title-fifth {
+    font-family: "noto-sans";
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+}
+
+@mixin title-sixth {
+    font-family: "noto-sans";
+    font-weight: 400;
+    font-size: 17px;
+    font-style: normal;
+}
+
+@mixin btn-primary {
+    font-family: "noto-sans";
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+}
+
+@mixin btn-secondary {
+    font-family: "noto-sans";
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+}
+
+@mixin forms {
+    font-family: "noto-sans";
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+}
+
+@mixin links {
+    font-family: "noto-sans";
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+}
+
+@mixin tabs {
+    font-family: "noto-sans";
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+}
+
+@mixin span-primary {
+    font-family: "noto-sans";
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+}
+
+@mixin span-secondary {
+    font-family: "noto-sans";
+    font-weight: 300;
+    font-size: 14px;
+    font-style: normal;
+}
+
+// Noto Sans Light
+// font-family: noto-sans, sans-serif;
+// font-weight: 300;
+// font-style: normal;
+
+// Noto Sans Regular
+// font-family: noto-sans, sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+// Noto Sans Medium
+// font-family: noto-sans, sans-serif;
+// font-weight: 500;
+// font-style: normal;
+
+// Noto Sans SemiBold
+// font-family: noto-sans, sans-serif;
+// font-weight: 600;
+// font-style: normal;
+
+// Noto Sans Bold
+// font-family: noto-sans, sans-serif;
+// font-weight: 700;
+// font-style: normal;
+
+// Poppins Bold
+// font-family: poppins, sans-serif;
+// font-weight: 700;
+// font-style: normal;
