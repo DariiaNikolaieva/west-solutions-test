@@ -89,6 +89,13 @@
     font-style: normal;
 }
 
+@mixin dropdown {
+    font-family: "noto-sans";
+    font-weight: 400;
+    font-size: 13px;
+    font-style: normal;
+}
+
 // Noto Sans Light
 // font-family: noto-sans, sans-serif;
 // font-weight: 300;

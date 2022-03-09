@@ -1,6 +1,6 @@
 .cars-grid {
   padding-top: 100px;
-  padding-bottom: 120px;
+  padding-bottom: 520px;
 }
 
 .cars-grid-title {
@@ -11,39 +11,105 @@
   line-height: 1.5;
 }
 
+// dropdown section
 .dropdown-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  padding-bottom: 25px;
 }
 
-.cars-grid .dropdown > .btn.btn-secondary {
+.cars-grid .form-select {
+  @include dropdown;
   width: 170px;
-  @include btn-secondary;
-  text-align: left;
-  padding: 13.44px 0 12.48px 16px;
   color: $color-primary-100;
   border: 1px solid $color-secondary-300;
   border-radius: 15px;
-  background-color: transparent;
+  line-height: 1.08;
 }
 
-.dropdown-toggle::after {
-    position: absolute;
-    top: 17.26px;
-    right: 16px;
-    content: '\2304';
-    color: transparent;
-    background-image: url('../assets/images/arrowhead-down.svg');
-    background-repeat: no-repeat;
-}
+// .cars-grid .dropdown > .btn.btn-secondary {
+//   width: 170px;
+//   @include btn-secondary;
+//   text-align: left;
+//   padding: 13.44px 0 12.48px 16px;
+//   color: $color-primary-100;
+//   border: 1px solid $color-secondary-300;
+//   border-radius: 15px;
+//   background-color: transparent;
+// }
+
+// .dropdown-toggle::after {
+//     position: absolute;
+//     top: 17.26px;
+//     right: 16px;
+//     content: '\2304';
+//     color: transparent;
+//     background-image: url('../assets/images/arrowhead-down.svg');
+//     background-repeat: no-repeat;
+// }
 
 .cars-grid .btn.btn-primary {
-    @include btn-secondary;
-    padding: 13px 118px;
-    color: $color-primary-200;
-    background-color: $color-primary-300;
-    border-color: $color-primary-300;
-    border-radius: 15px;
+  @include btn-secondary;
+  padding: 13px 118px;
+  color: $color-primary-200;
+  background-color: $color-primary-300;
+  border-color: $color-primary-300;
+  border-radius: 15px;
+}
+
+// .cars-grid .dropdown-menu {
+//   width: 170px;
+//   @include dropdown;
+//   line-height: 1.08;
+//   border: 1px solid $color-secondary-400;
+//   border-radius: 15px;
+//   box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.04);
+// }
+
+.cars-grid .form-check-label {
+  color: $color-secondary-200;
+  vertical-align: middle;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.sorting-container {
+  display: flex;
+  column-gap: 37px;
+  color: $color-primary-100;
+}
+
+.sorting-container > .form-select {
+  width: 180px;
+  padding: 0;
+  align-items: flex-start;
+  color: $color-secondary-200;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+}
+
+.sorting-container > label {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    left: 56px;
+    content: '1';
+    color: transparent;
+    background-image: url('../assets/images/svg/ascending.svg');
+    width: 13px;
+    height: 13px;
+    background-repeat: no-repeat;
   }
+}
+
+
+// cars cards

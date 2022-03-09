@@ -84,11 +84,46 @@
         <div class="container">
           <h2 class="cars-grid-title">CURRENT OFFERS</h2>
           <div class="dropdown-container">
-            <div class="dropdown">
+            <select class="form-select" aria-label="year">
+              <option selected>Year</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+            </select>
+            <select class="form-select" aria-label="make">
+              <option selected>Make</option>
+              <option value="volkswagen">Volkswagen</option>
+              <option value="toyota">Toyota</option>
+              <option value="lexus">Lexus</option>
+              <option value="hyndai">Hyndai</option>
+              <option value="mercedes-benz">Mercedes-Benz</option>
+            </select>
+            <select class="form-select" aria-label="model">
+                <option selected>Model</option>
+                <option value="tiguan">Tiguan</option>
+                <option value="highlander-xle">Highlander XLE</option>
+                <option value="highlander-le-awd">Highlander LE AWD</option>
+                <option value="venza-awd-xle">Venza AWD XLE</option>
+                <option value="rx-350-luxury">RX 350 LUXURY</option>
+                <option value="rx-350-f-sport">RX 350 F-SPORT</option>
+                <option value="elantra">Elantra</option>
+                <option value="gle-ci">GLE-CI</option>
+            </select>
+            <select class="form-select" aria-label="trim">
+              <option selected>Trim</option>
+            </select>
+            <select class="form-select" aria-label="mileage">
+              <option selected>Mileage</option>
+            </select>
+            <!-- <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 Year
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><h6 class="dropdown-header">Year</h6></li>
                 <li><a class="dropdown-item" href="#">2014</a></li>
                 <li><a class="dropdown-item" href="#">2015</a></li>
                 <li><a class="dropdown-item" href="#">2016</a></li>
@@ -137,8 +172,29 @@
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
               </ul>
-            </div>
+            </div> -->
             <button type="button" class="btn btn-primary">40 cars</button>
+          </div>
+          <div class="filter-container">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Instantly available vehicles
+              </label>
+            </div>
+            <div class="sorting-container">
+              <label for="sorting">Sort by</label>
+              <select class="form-select" id="sorting" aria-label="sorting">
+                <option value="date-asc">Publication date (ascending)</option>
+                <option value="date-desc">Publication date (descending)</option>
+                <option value="price-asc">Price (ascending)</option>
+                <option value="price-desc">Price (descending)</option>
+                <option value="mile-asc">Mileage (ascending)</option>
+                <option value="mile-desc">Mileage (descending)</option>
+                <option value="perfomance-asc">Performance (ascending)</option>
+                <option value="perfomance-desc">Performance (descending)</option>
+              </select>
+            </div>
           </div>
         </div>
       </section>
