@@ -1,0 +1,54 @@
+.feedback-container {
+  background-color: $color-primary-100;
+  padding: 40px 0 46px 0;
+
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & form {
+    display: flex;
+    gap: 20px;
+
+    & .btn.btn-primary {
+        height: 100%;
+        padding: 16px 43px 18px 44px;
+        @include btn-secondary;
+        color: $color-primary-100;
+        background-color: $color-primary-200;
+        border: none;
+        border-radius: 15px;
+    }
+  }
+}
+
+.feedback-text-container {
+  max-width: 429px;
+  color: $color-primary-200;
+  @include forms;
+  line-height: 1.36;
+
+  & > h2 {
+    @include title-fourth;
+    color: $color-primary-200;
+    margin-bottom: 20px;
+  }
+}
+
+.feedback-container .form-control {
+  width: 505px;
+  height: 100%;
+  padding: 15px 22px 19px 16px;
+  @include forms;
+  color: $color-primary-200;
+  background-color: transparent;
+  border: 1px solid $color-secondary-300;
+  border-radius: 15px;
+
+  &::placeholder {
+    color: $color-primary-200;
+    @include forms;
+  }
+}

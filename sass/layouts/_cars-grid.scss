@@ -1,6 +1,6 @@
-.cars-grid {
+.cars-grid-section {
   padding-top: 100px;
-  padding-bottom: 520px;
+  padding-bottom: 120px;
 }
 
 .cars-grid-title {
@@ -17,13 +17,14 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
-.cars-grid .form-select {
+.cars-grid-section .form-select {
   @include dropdown;
   width: 170px;
   color: $color-primary-100;
+  background-color: transparent;
   border: 1px solid $color-secondary-300;
   border-radius: 15px;
   line-height: 1.08;
@@ -50,7 +51,7 @@
 //     background-repeat: no-repeat;
 // }
 
-.cars-grid .btn.btn-primary {
+.cars-grid-section .btn.btn-primary {
   @include btn-secondary;
   padding: 13px 118px;
   color: $color-primary-200;
@@ -68,12 +69,17 @@
 //   box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.04);
 // }
 
-.cars-grid .form-check-label {
+.cars-grid-section .form-check {
+  min-height: auto;
+}
+
+.cars-grid-section .form-check-label {
   color: $color-secondary-200;
   vertical-align: middle;
 }
 
 .filter-container {
+  margin-bottom: 23px;
   display: flex;
   justify-content: space-between;
   font-size: 12px;
@@ -102,14 +108,93 @@
   &::after {
     position: absolute;
     left: 56px;
-    content: '1';
+    content: "1";
     color: transparent;
-    background-image: url('../assets/images/svg/ascending.svg');
+    background-image: url("../assets/images/svg/ascending.svg");
     width: 13px;
     height: 13px;
     background-repeat: no-repeat;
   }
 }
 
-
 // cars cards
+.cars-grid > .row {
+  --bs-gutter-x: 20px;
+  --bs-gutter-y: 20px;
+  justify-content: center;
+}
+
+.cars-grid .col {
+  flex: 0;
+}
+
+.cars-grid .card {
+  background-color: $color-secondary-500;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
+}
+
+.cars-grid img {
+  margin-bottom: 20px;
+}
+
+.cars-grid .card-body {
+  padding: 0 20px 35px 20px;
+}
+
+.cars-grid .card-body > .card-title {
+  @include title-sixth;
+  line-height: 1.35;
+  margin-bottom: 13px;
+
+  & > span {
+    color: $color-secondary-200;
+    margin-right: 8px;
+  }
+}
+
+.cars-grid .card-body > .card-text {
+  margin-bottom: 26px;
+  @include span-secondary;
+  color: $color-secondary-200;
+  line-height: 1.36;
+}
+
+.cars-grid .card-body > .card-price {
+  @include span-primary;
+  color: $color-primary-100;
+  line-height: 1.35;
+}
+
+.cars-grid .card-body .card {
+  position: relative;
+}
+
+.cars-grid .card .sold-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include title-second;
+  line-height: 1.5;
+  color: $color-secondary-500;
+}
+
+.cars-grid .card .new-text {
+  position: absolute;
+  top: 176px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 66.5px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-primary-100;
+  @include title-second;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-secondary-500;
+}
