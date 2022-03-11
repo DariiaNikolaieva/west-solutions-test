@@ -1,0 +1,28 @@
+.questions-container {
+    padding-top: 120px;
+    padding-bottom: 200px;
+
+    & .accordion {
+        margin: 0 auto;
+        max-width: 820px;
+
+        & .accordion-button {
+            background-color: $color-primary-200;
+
+            &::after {
+                background-size: 11px;
+                background-position: center;
+                background-image: url('../assets/images/svg/plus.svg');
+            }
+        }
+    }
+}
+
+.questions-title {
+    @include title-second;
+  text-align: center;
+  margin-bottom: 74px;
+  color: $color-secondary-100;
+  line-height: 1.5;
+    text-transform: uppercase;
+}
