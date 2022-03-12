@@ -84,40 +84,68 @@
         <div class="container">
           <h2 class="cars-grid-title">CURRENT OFFERS</h2>
           <div class="dropdown-container">
-            <select class="form-select" aria-label="year">
-              <option selected>Year</option>
-              <option value="2014">2014</option>
-              <option value="2015">2015</option>
-              <option value="2016">2016</option>
-              <option value="2017">2017</option>
-              <option value="2018">2018</option>
-              <option value="2019">2019</option>
-            </select>
-            <select class="form-select" aria-label="make">
-              <option selected>Make</option>
-              <option value="volkswagen">Volkswagen</option>
-              <option value="toyota">Toyota</option>
-              <option value="lexus">Lexus</option>
-              <option value="hyundai">Hyundai</option>
-              <option value="mercedes-benz">Mercedes-Benz</option>
-            </select>
-            <select class="form-select" aria-label="model">
-                <option selected>Model</option>
-                <option value="tiguan">Tiguan</option>
-                <option value="highlander-xle">Highlander XLE</option>
-                <option value="highlander-le-awd">Highlander LE AWD</option>
-                <option value="venza-awd-xle">Venza AWD XLE</option>
-                <option value="rx-350-luxury">RX 350 LUXURY</option>
-                <option value="rx-350-f-sport">RX 350 F-SPORT</option>
-                <option value="elantra">Elantra</option>
-                <option value="gle-ci">GLE-CI</option>
-            </select>
-            <select class="form-select" aria-label="trim">
-              <option selected>Trim</option>
-            </select>
-            <select class="form-select" aria-label="mileage">
-              <option selected>Mileage</option>
-            </select>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Year
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>Year</li>
+                <li>2014</li>
+                <li>2015</li>
+                <li>2016</li>
+                <li>2017</li>
+                <li>2018</li>
+                <li>2019</li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                Make
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                <li value="Make">Make</li>
+                <li value="volkswagen">Volkswagen</li>
+                <li value="toyota">Toyota</li>
+                <li value="lexus">Lexus</li>
+                <li value="hyundai">Hyundai</li>
+                <li value="mercedes-benz">Mercedes-Benz</li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                Model
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                <li value="Model">Model</li>
+                <li value="Tiguan">Tiguan</li>
+                <li value="Highlander XLE">Highlander XLE</li>
+                <li value="Venza AWD XLE">Venza AWD XLE</li>
+                <li value="RX 350 LUXURY">RX 350 LUXURY</li>
+                <li value="RX 350 F-SPORT">RX 350 F-SPORT</li>
+                <li value="Elantra">Elantra</li>
+                <li value="GLE-CI">GLE-CI</li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                Trim
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                <li value="Trim">Trim</li>
+                <li value="Trim">Trim</li>
+                <li value="Trim">Trim</li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                Mileage
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                <li value="Mileage">Mileage</li>
+                <li value="Mileage">Mileage</li>
+                <li value="Mileage">Mileage</li>
+              </ul>
+            </div>
             <button type="button" class="btn btn-primary">40 cars</button>
           </div>
           <div class="filter-container">
@@ -127,7 +155,23 @@
                 Instantly available vehicles
               </label>
             </div>
-            <div class="sorting-container">
+            <div class="dropdown">
+              <label for="sorting">Sort by</label>
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
+                Publication date (ascending)
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+                <li value="">Publication date (ascending)</li>
+                <li value="">Publication date (descending)</li>
+                <li value="">Price (ascending)</li>
+                <li value="">Price (descending)</li>
+                <li value="">Mileage (ascending)</li>
+                <li value="">Mileage (descending)</li>
+                <li value="">Performance (ascending)</li>
+                <li value="">Performance (descending)</li>
+              </ul>
+            </div>
+            <!-- <div class="sorting-container">
               <label for="sorting">Sort by</label>
               <select class="form-select" id="sorting" aria-label="sorting">
                 <option value="date-asc">Publication date (ascending)</option>
@@ -139,7 +183,7 @@
                 <option value="perfomance-asc">Performance (ascending)</option>
                 <option value="perfomance-desc">Performance (descending)</option>
               </select>
-            </div>
+            </div> -->
           </div>
           <div class="cars-grid">
               <div class="row">
