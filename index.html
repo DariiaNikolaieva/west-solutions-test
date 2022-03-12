@@ -155,35 +155,24 @@
                 Instantly available vehicles
               </label>
             </div>
-            <div class="dropdown">
-              <label for="sorting">Sort by</label>
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
-                Publication date (ascending)
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
-                <li value="">Publication date (ascending)</li>
-                <li value="">Publication date (descending)</li>
-                <li value="">Price (ascending)</li>
-                <li value="">Price (descending)</li>
-                <li value="">Mileage (ascending)</li>
-                <li value="">Mileage (descending)</li>
-                <li value="">Performance (ascending)</li>
-                <li value="">Performance (descending)</li>
-              </ul>
+            <div class="sorting-container">
+              <div class="dropdown">
+                <label for="sorting">Sort by</label>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
+                  Publication date (ascending)
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+                  <li value="">Publication date (ascending)</li>
+                  <li value="">Publication date (descending)</li>
+                  <li value="">Price (ascending)</li>
+                  <li value="">Price (descending)</li>
+                  <li value="">Mileage (ascending)</li>
+                  <li value="">Mileage (descending)</li>
+                  <li value="">Performance (ascending)</li>
+                  <li value="">Performance (descending)</li>
+                </ul>
+              </div>
             </div>
-            <!-- <div class="sorting-container">
-              <label for="sorting">Sort by</label>
-              <select class="form-select" id="sorting" aria-label="sorting">
-                <option value="date-asc">Publication date (ascending)</option>
-                <option value="date-desc">Publication date (descending)</option>
-                <option value="price-asc">Price (ascending)</option>
-                <option value="price-desc">Price (descending)</option>
-                <option value="mile-asc">Mileage (ascending)</option>
-                <option value="mile-desc">Mileage (descending)</option>
-                <option value="perfomance-asc">Performance (ascending)</option>
-                <option value="perfomance-desc">Performance (descending)</option>
-              </select>
-            </div> -->
           </div>
           <div class="cars-grid">
               <div class="row">
@@ -191,7 +180,10 @@
                   <div class="card">
                     <img src="assets/images/jpg/cars/00-car.jpg" alt="Volkswagen Tiguan" width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2019</span>Volkswagen Tiguan</h5>
+                      <div class="card-title-container">
+                        <span>2019</span>
+                        <h5 class="card-title">Volkswagen Tiguan</h5>
+                      </div>
                       <p class="card-text">19,855 km<span> | </span>Automatic<span> | </span>Diesel</p>
                       <p class="card-price">$34,888</p>
                     </div>
@@ -202,7 +194,10 @@
                     <img src="assets/images/jpg/cars/01-car.jpg" alt="Toyota Highlander XLE" width="295" height="200">
                     <span class="new-text">New</span>
                     <div class="card-body">
-                      <h5 class="card-title"><span>2014</span>Toyota Highlander XLE</h5>
+                      <div class="card-title-container">
+                        <span>2014</span>
+                        <h5 class="card-title">Toyota Highlander XLE</h5>
+                      </div>
                       <p class="card-text">69,000 km<span> | </span>Automatic<span> | </span>Gas</p>
                       <p class="card-price">$27,875</p>
                     </div>
@@ -212,7 +207,10 @@
                   <div class="card">
                     <img src="assets/images/jpg/cars/02-car.jpg" alt="Lexus RX 350 LUXURY" width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2017</span>Lexus RX 350 LUXURY</h5>
+                      <div class="card-title-container">
+                        <span>2017</span>
+                        <h5 class="card-title">Lexus RX 350 LUXURY</h5>
+                      </div>
                       <p class="card-text">39,850 km<span> | </span>Automatic<span> | </span>Diesel</p>
                       <p class="card-price">$38,775</p>
                     </div>
@@ -222,7 +220,10 @@
                   <div class="card">
                     <img src="assets/images/jpg/cars/03-car.jpg" alt="Toyota Highlander LE AWD" width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2016</span>Toyota Highlander LE A..</h5>
+                      <div class="card-title-container">
+                        <span>2016</span>
+                        <h5 class="card-title">Toyota Highlander LE A..</h5>
+                      </div>
                       <p class="card-text">104,000 km<span> | </span>Automatic<span> | </span>Gas</p>
                       <p class="card-price">$23,728</p>
                     </div>
@@ -232,7 +233,10 @@
                   <div class="card">
                     <img src="assets/images/jpg/cars/04-car.jpg" alt="Hyundai Elantra" width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2017</span>Hyundai Elantra</h5>
+                      <div class="card-title-container">
+                        <span>2017</span>
+                        <h5 class="card-title">Hyundai Elantra</h5>
+                      </div>
                       <p class="card-text">95,000 km<span> | </span>Automatic<span> | </span>Gas</p>
                       <p class="card-price">$11,788</p>
                     </div>
@@ -242,7 +246,10 @@
                   <div class="card">
                     <img src="assets/images/jpg/cars/05-car.jpg" alt="Mercedes-Benz GLE-CI..." width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2016</span>Mercedes-Benz GLE-CI...</h5>
+                      <div class="card-title-container">
+                        <span>2016</span>
+                        <h5 class="card-title">Mercedes-Benz GLE-CI...</h5>
+                      </div>
                       <p class="card-text">59,800 km<span> | </span>Automatic<span> | </span>Diesel</p>
                       <p class="card-price">$38,878</p>
                     </div>
@@ -253,7 +260,10 @@
                     <img src="assets/images/jpg/cars/06-car.jpg" alt="Toyota Venza AWD XLE..." width="295" height="200">
                     <span class="sold-text">SOLD</span>
                     <div class="card-body">
-                      <h5 class="card-title"><span>2015</span>Toyota Venza AWD XLE...</h5>
+                      <div class="card-title-container">
+                        <span>2015</span>
+                        <h5 class="card-title">Toyota Venza AWD XLE...</h5>
+                      </div>
                       <p class="card-text">99,000 km<span> | </span>Automatic<span> | </span>Gas</p>
                       <p class="card-price">$18,620</p>
                     </div>
@@ -264,7 +274,10 @@
                     <img src="assets/images/jpg/cars/07-car.jpg" alt="Lexus RX 350 F-SPORT" width="295" height="200">
                     <span class="new-text">New</span>
                     <div class="card-body">
-                      <h5 class="card-title"><span>2016</span>Lexus RX 350 F-SPORT</h5>
+                      <div class="card-title-container">
+                        <span>2016</span>
+                        <h5 class="card-title">Lexus RX 350 F-SPORT</h5>
+                      </div>
                       <p class="card-text">86,000 km<span> | </span>Automatic<span> | </span>Gas</p>
                       <p class="card-price">$34,888</p>
                     </div>
@@ -274,7 +287,10 @@
                   <div class="card">
                     <img src="assets/images/jpg/cars/08-car.jpg" alt="Volkswagen Tiguan" width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2019</span>Volkswagen Tiguan</h5>
+                      <div class="card-title-container">
+                        <span>2019</span>
+                        <h5 class="card-title">Volkswagen Tiguan</h5>
+                      </div>
                       <p class="card-text">19,855 km<span> | </span>Automatic<span> | </span>Diesel</p>
                       <p class="card-price">$34,888</p>
                     </div>
@@ -284,7 +300,10 @@
                   <div class="card">
                     <img src="assets/images/jpg/cars/09-car.jpg" alt="Toyota Highlander XLE" width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2014</span>Toyota Highlander XLE</h5>
+                      <div class="card-title-container">
+                        <span>2014</span>
+                        <h5 class="card-title">Toyota Highlander XLE</h5>
+                      </div>
                       <p class="card-text">69,000 km<span> | </span>Automatic<span> | </span>Gas</p>
                       <p class="card-price">$27,875</p>
                     </div>
@@ -294,7 +313,10 @@
                   <div class="card">
                     <img src="assets/images/jpg/cars/10-car.jpg" alt="Lexus RX 350 LUXURY" width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2017</span>Lexus RX 350 LUXURY</h5>
+                      <div class="card-title-container">
+                        <span>2017</span>
+                        <h5 class="card-title">Lexus RX 350 LUXURY</h5>
+                      </div>
                       <p class="card-text">39,850 km<span> | </span>Automatic<span> | </span>Diesel</p>
                       <p class="card-price">$38,775</p>
                     </div>
@@ -304,7 +326,10 @@
                   <div class="card">
                     <img src="assets/images/jpg/cars/11-car.jpg" alt="Toyota Highlander LE AWD" width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2016</span>Toyota Highlander LE A..</h5>
+                      <div class="card-title-container">
+                        <span>2016</span>
+                        <h5 class="card-title">Toyota Highlander LE A..</h5>
+                      </div>
                       <p class="card-text">104,000 km<span> | </span>Automatic<span> | </span>Gas</p>
                       <p class="card-price">$23,728</p>
                     </div>
@@ -315,7 +340,10 @@
                     <img src="assets/images/jpg/cars/12-car.jpg" alt="Volkswagen Tiguan" width="295" height="200">
                     <span class="new-text">New</span>
                     <div class="card-body">
-                      <h5 class="card-title"><span>2019</span>Volkswagen Tiguan</h5>
+                      <div class="card-title-container">
+                        <span>2019</span>
+                        <h5 class="card-title">Volkswagen Tiguan</h5>
+                      </div>
                       <p class="card-text">19,855 km<span> | </span>Automatic<span> | </span>Diesel</p>
                       <p class="card-price">$34,888</p>
                     </div>
@@ -325,7 +353,10 @@
                   <div class="card">
                     <img src="assets/images/jpg/cars/13-car.jpg" alt="Toyota Highlander XLE" width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2014</span>Toyota Highlander XLE</h5>
+                      <div class="card-title-container">
+                        <span>2014</span>
+                        <h5 class="card-title">Toyota Highlander XLE</h5>
+                      </div>
                       <p class="card-text">69,000 km<span> | </span>Automatic<span> | </span>Gas</p>
                       <p class="card-price">$27,875</p>
                     </div>
@@ -335,7 +366,10 @@
                   <div class="card">
                     <img src="assets/images/jpg/cars/14-car.jpg" alt="Lexus RX 350 LUXURY" width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2017</span>Lexus RX 350 LUXURY</h5>
+                      <div class="card-title-container">
+                        <span>2017</span>
+                        <h5 class="card-title">Lexus RX 350 LUXURY</h5>
+                      </div>
                       <p class="card-text">39,850 km<span> | </span>Automatic<span> | </span>Diesel</p>
                       <p class="card-price">$38,775</p>
                     </div>
@@ -345,7 +379,10 @@
                   <div class="card">
                     <img src="assets/images/jpg/cars/15-car.jpg" alt="Toyota Highlander LE AWD" width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2016</span>Toyota Highlander LE A..</h5>
+                      <div class="card-title-container">
+                        <span>2016</span>
+                        <h5 class="card-title">Toyota Highlander LE A..</h5>
+                      </div>
                       <p class="card-text">104,000 km<span> | </span>Automatic<span> | </span>Gas</p>
                       <p class="card-price">$23,728</p>
                     </div>
@@ -355,7 +392,10 @@
                   <div class="card">
                     <img src="assets/images/jpg/cars/16-car.jpg" alt="Hyundai Elantra" width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2017</span>Hyundai Elantra</h5>
+                      <div class="card-title-container">
+                        <span>2017</span>
+                        <h5 class="card-title">Hyundai Elantra</h5>
+                      </div>
                       <p class="card-text">95,000 km<span> | </span>Automatic<span> | </span>Gas</p>
                       <p class="card-price">$11,788</p>
                     </div>
@@ -365,7 +405,10 @@
                   <div class="card">
                     <img src="assets/images/jpg/cars/17-car.jpg" alt="Mercedes-Benz GLE-CI..." width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2016</span>Mercedes-Benz GLE-CI...</h5>
+                      <div class="card-title-container">
+                        <span>2016</span>
+                        <h5 class="card-title">Mercedes-Benz GLE-CI...</h5>
+                      </div>
                       <p class="card-text">59,800 km<span> | </span>Automatic<span> | </span>Diesel</p>
                       <p class="card-price">$38,878</p>
                     </div>
@@ -375,7 +418,10 @@
                   <div class="card">
                     <img src="assets/images/jpg/cars/18-car.jpg" alt="Toyota Venza AWD XLE..." width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2015</span>Toyota Venza AWD XLE...</h5>
+                      <div class="card-title-container">
+                        <span>2015</span>
+                        <h5 class="card-title">Toyota Venza AWD XLE...</h5>
+                      </div>
                       <p class="card-text">99,000 km<span> | </span>Automatic<span> | </span>Gas</p>
                       <p class="card-price">$18,620</p>
                     </div>
@@ -386,7 +432,10 @@
                     <img src="assets/images/jpg/cars/19-car.jpg" alt="Lexus RX 350 F-SPORT" width="295" height="200">
                     <span class="new-text">New</span>
                     <div class="card-body">
-                      <h5 class="card-title"><span>2016</span>Lexus RX 350 F-SPORT</h5>
+                      <div class="card-title-container">
+                        <span>2016</span>
+                        <h5 class="card-title">Lexus RX 350 F-SPORT</h5>
+                      </div>
                       <p class="card-text">86,000 km<span> | </span>Automatic<span> | </span>Gas</p>
                       <p class="card-price">$34,888</p>
                     </div>
@@ -394,9 +443,12 @@
                 </div>
                 <div class="col">
                   <div class="card">
-                    <img src="assets/images/jpg/cars/12-car.jpg" alt="Volkswagen Tiguan" width="295" height="200">
+                    <img src="assets/images/jpg/cars/20-car.jpg" alt="Volkswagen Tiguan" width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2019</span>Volkswagen Tiguan</h5>
+                      <div class="card-title-container">
+                        <span>2019</span>
+                        <h5 class="card-title">Volkswagen Tiguan</h5>
+                      </div>
                       <p class="card-text">19,855 km<span> | </span>Automatic<span> | </span>Diesel</p>
                       <p class="card-price">$34,888</p>
                     </div>
@@ -404,9 +456,12 @@
                 </div>
                 <div class="col">
                   <div class="card">
-                    <img src="assets/images/jpg/cars/13-car.jpg" alt="Toyota Highlander XLE" width="295" height="200">
+                    <img src="assets/images/jpg/cars/21-car.jpg" alt="Toyota Highlander XLE" width="295" height="200">
                     <div class="card-body">
-                      <h5 class="card-title"><span>2014</span>Toyota Highlander XLE</h5>
+                      <div class="card-title-container">
+                        <span>2014</span>
+                        <h5 class="card-title">Toyota Highlander XLE</h5>
+                      </div>
                       <p class="card-text">69,000 km<span> | </span>Automatic<span> | </span>Gas</p>
                       <p class="card-price">$27,875</p>
                     </div>

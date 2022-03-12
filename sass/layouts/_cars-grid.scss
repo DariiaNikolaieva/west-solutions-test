@@ -42,7 +42,8 @@
       background-image: url("../assets/images/arrowhead-down.svg");
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       font-weight: 600;
       box-shadow: none;
     }
@@ -68,7 +69,8 @@
     & > li {
       padding-left: 16px;
 
-      &:hover, &:hover {
+      &:hover,
+      &:hover {
         color: $color-primary-300;
       }
     }
@@ -81,17 +83,18 @@
     background-color: $color-primary-300;
     border-color: $color-primary-300;
     border-radius: 15px;
-  
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
       color: $color-primary-300;
-    background-color: transparent;
-    border-color: $color-primary-300;
-    box-shadow: none;
+      background-color: transparent;
+      border-color: $color-primary-300;
+      box-shadow: none;
     }
   }
 }
 
-// filter container 
+// filter container
 .filter-container {
   margin-bottom: 23px;
   display: flex;
@@ -112,8 +115,8 @@
       box-shadow: none;
 
       &:checked {
-      background-color: $color-primary-300;
-      border-color: $color-primary-300;
+        background-color: $color-primary-300;
+        border-color: $color-primary-300;
       }
     }
 
@@ -126,122 +129,158 @@
 
 // sorting container
 .sorting-container {
+  @include btn-secondary;
   display: flex;
   column-gap: 37px;
+  font-size: 12px;
+  line-height: 1.36;
   color: $color-primary-100;
-}
 
-.sorting-container > .form-select {
-  width: 180px;
-  padding: 0;
-  align-items: flex-start;
-  color: $color-secondary-200;
-  background-image: none;
-  border: none;
-  border-radius: 0;
-}
+  & .btn.btn-secondary {
+    position: relative;
+    margin-left: 37px;
+    padding: 0;
+    @include btn-secondary;
+    font-size: 12px;
+    line-height: 1.36;
+    color: $color-secondary-200;
+    background-color: $color-primary-200;
+    border: none;
 
-.sorting-container > label {
-  position: relative;
+    &::after {
+      border: none;
+    }
 
-  &::after {
-    position: absolute;
-    left: 56px;
-    content: "1";
-    color: transparent;
-    background-image: url("../assets/images/svg/ascending.svg");
-    width: 13px;
-    height: 13px;
-    background-repeat: no-repeat;
+    &::before {
+      position: absolute;
+      content: "";
+      left: -21px;
+      width: 13px;
+      height: 13px;
+      background-image: url("../assets/images/svg/ascending.svg");
+      background-repeat: no-repeat;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-primary-300;
+      box-shadow: none;
+    }
   }
-}
 
-// cars cards
-.cars-grid > .row {
-  --bs-gutter-x: 20px;
-  --bs-gutter-y: 20px;
-  justify-content: center;
-}
+  & .dropdown-menu {
+    padding: 12px 12px 12px 12px;
+    background-color: $color-secondary-500;
+    border: 1px solid $color-secondary-500;
+    border-radius: 15px;
+    transform: translate3d(65px, 20px, 0px) !important;
 
-.cars-grid .col {
-  flex: 0;
-}
+    & > li {
+      @include btn-secondary;
+      font-size: 12px;
+      line-height: 1.36;
 
-.cars-grid .card {
-  background-color: $color-secondary-500;
-  border: none;
-  border-radius: 0;
-  box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
+      &:hover,
+      &:focus {
+        color: $color-primary-300;
+        box-shadow: none;
+      }
 
-  &:hover .card-title, &:focus .card-title {
-    text-decoration: underline;
-
-    & > span {
-      text-decoration: none;
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
     }
   }
 }
 
-.cars-grid img {
-  margin-bottom: 20px;
-}
-
-.cars-grid .card-body {
-  padding: 0 20px 35px 20px;
-}
-
-.cars-grid .card-body > .card-title {
-  @include title-sixth;
-  line-height: 1.35;
-  margin-bottom: 13px;
-
-  & > span {
-    color: $color-secondary-200;
-    margin-right: 8px;
+// cars cards
+.cars-grid {
+  & > .row {
+    --bs-gutter-x: 20px;
+    --bs-gutter-y: 20px;
+    justify-content: center;
   }
-}
 
-.cars-grid .card-body > .card-text {
-  margin-bottom: 26px;
-  @include span-secondary;
-  color: $color-secondary-200;
-  line-height: 1.36;
-}
+  & .col {
+    flex: 0;
+  }
 
-.cars-grid .card-body > .card-price {
-  @include span-primary;
-  color: $color-primary-100;
-  line-height: 1.35;
-}
+  & .card {
+    position: relative;
+    background-color: $color-secondary-500;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
+    cursor: pointer;
 
-.cars-grid .card-body .card {
-  position: relative;
-}
+    & > .card-body {
+      padding: 0 20px 35px 20px;
 
-.cars-grid .card .sold-text {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  @include title-second;
-  line-height: 1.5;
-  color: $color-secondary-500;
-}
+      & > .card-text {
+        margin-bottom: 26px;
+        @include span-secondary;
+        color: $color-secondary-200;
+        line-height: 1.36;
+      }
 
-.cars-grid .card .new-text {
-  position: absolute;
-  top: 176px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  width: 66.5px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $color-primary-100;
-  @include title-second;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: $color-secondary-500;
+      & > .card-price {
+        @include span-primary;
+        color: $color-primary-100;
+        line-height: 1.35;
+      }
+    }
+
+    & .card-title-container {
+      display: flex;
+      & > span {
+        color: $color-secondary-200;
+        margin-right: 8px;
+      }
+
+      & > .card-title {
+        @include title-sixth;
+        line-height: 1.35;
+        margin-bottom: 13px;
+      }
+    }
+  
+    &:hover h5.card-title,
+    &:focus h5.card-title {
+      text-decoration: underline;
+    }
+
+    & .sold-text {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include title-second;
+      line-height: 1.5;
+      color: $color-secondary-500;
+    }
+    
+    & .new-text {
+      position: absolute;
+      top: 176px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      width: 66.5px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $color-primary-100;
+      @include title-second;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $color-secondary-500;
+    }
+    
+  }
+
+  & img {
+    margin-bottom: 20px;
+  }
+  
 }
